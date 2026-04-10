@@ -9,12 +9,12 @@ class SzyfrTest {
         Assertions.assertEquals("", Szyfr.szyfrujPrzestawieniowo(""));
     }
     @Test
-    void szyfrujPrzestawieniowoJezeliParzystaDlugoscSlowa(){
-        Assertions.assertEquals("atam", Szyfr.szyfrujPrzestawieniowo("tama"));
-    }
-    @Test
     void szyfrujPrzestawieniowoJezeliJednaLitera(){
         Assertions.assertEquals("z", Szyfr.szyfrujPrzestawieniowo("z"));
+    }
+    @Test
+    void szyfrujPrzestawieniowoJezeliParzystaDlugoscSlowa(){
+        Assertions.assertEquals("atam", Szyfr.szyfrujPrzestawieniowo("tama"));
     }
     @Test
     void szyfrujPrzestawieniowoJezeliNieparzystaDlugoscSlowa(){
